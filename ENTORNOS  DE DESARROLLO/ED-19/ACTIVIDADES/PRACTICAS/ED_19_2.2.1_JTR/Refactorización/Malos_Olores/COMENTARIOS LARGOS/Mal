@@ -1,0 +1,99 @@
+import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+/*La clase SistemaGestionEmpleados implementa funcionalidades básicas 
+para la gestión de empleados. Se podrían agregar más funcionalidades, 
+como la edición de información de empleados, la generación de informes, 
+la exportación de datos, etc.
+La clase utiliza una lista de objetos Empleado para almacenar la información 
+de los empleados. Esta es una buena opción para manejar una cantidad moderada de datos.
+ Si se espera manejar una gran cantidad de datos, se podría considerar utilizar una base
+  de datos.
+El código está bien estructurado y utiliza comentarios para explicar su propósito. 
+Esto facilita la comprensión y el mantenimiento del código.
+El sistema de gestión de empleados presentado en esta clase Java es una herramienta útil 
+para organizar y administrar información sobre los empleados de una empresa.
+ El código está bien escrito y documentado, y se puede ampliar fácilmente para agregar
+  más funcionalidades.
+Este comentario es excesivamente largo y detallado. En un contexto real, es probable
+ que un comentario de este tipo no sea necesario. Sin embargo, este comentario puede
+  ser útil como referencia para comprender mejor la estructura y funcionalidad del código
+  . */ 
+class Empleado {
+private String nombre;
+private double salario;
+private String departamento;
+
+    public Empleado(String nombre, double salario, String departamento) {
+this.nombre = nombre;
+this.salario = salario;
+this.departamento = departamento;
+    }
+public String obtenerNombre() {
+return nombre;
+    }
+
+public double obtenerSalario() {
+return salario;
+    }
+
+public String obtenerDepartamento() {
+return departamento;
+    }
+
+    @Override
+    public String toString() {
+return "Empleado{" +
+"nombre='" + nombre + '\'' +
+", salario=" + salario +
+", departamento='" + departamento + '\'' +
+'}';
+    }
+}
+
+class SistemaGestionEmpleados {
+private ArrayList<Empleado> empleados;
+
+public SistemaGestionEmpleados() {
+this.empleados = new ArrayList<>();
+}
+
+public void agregarEmpleado(Empleado empleado) {
+empleados.add(empleado);
+System.out.println("Empleado agregado con éxito.");
+}
+public void eliminarEmpleado(String nombre) {
+for (int i = 0; i < empleados.size(); i++) {
+if (empleados.get(i).obtenerNombre().equals(nombre)) {
+empleados.remove(i);
+System.out.println("Empleado eliminado con éxito.");
+return;
+}
+}
+System.out.println("No se encontró el empleado.");
+}
+
+public void mostrarEmpleados() {
+if (empleados.isEmpty()) {
+System.out.println("No hay empleados registrados.");
+return;
+}
+
+System.out.println("Lista de empleados:");
+for (Empleado empleado : empleados) {
+System.out.println(empleado);
+}
+}
+public Empleado buscarEmpleado(String nombre) {
+for (Empleado empleado : empleados) {
+if (empleado.obtenerNombre().equals(nombre)) {
+return empleado;
+}
+}
+return null;
+}
+
+public void modificarSalarioEmpleado(String nombre, double nuevoSalario) {
+Empleado empleado = buscarEmpleado(nombre);
+if (empleado !=

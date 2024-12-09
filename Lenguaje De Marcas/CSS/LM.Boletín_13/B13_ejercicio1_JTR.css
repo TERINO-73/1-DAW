@@ -1,0 +1,20 @@
+p {
+    -webkit-text-fill-color: green;
+    background-color:red;
+}
+
+
+h1 {
+    -webkit-text-fill-color: blue;
+}
+h2 {
+    -webkit-text-fill-color: white;
+    background-color: blue;
+}
+a {
+    -webkit-text-fill-color: yellow;
+    background-color: black;
+}
+ol,ul,li {
+    background-color: chocolate;
+}

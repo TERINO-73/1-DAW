@@ -1,0 +1,17 @@
+<!ELEMENT pedidos (pedido*)>
+<!ELEMENT pedido (producto,datos_entrega,datos_comprador)>
+<!ELEMENT producto (nombre,codigo,cantidad,precio,precio_total)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT precio_total (#PCDATA)>
+<!ELEMENT datos_entrega (direccion,fecha)>
+<!ELEMENT direccion (ciudad,codigo_postal,calle)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT codigo_postal (#PCDATA)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT datos_comprador (nombre_completo,receptor)>
+<!ELEMENT nombre_completo (#PCDATA)>
+<!ELEMENT receptor (#PCDATA)>

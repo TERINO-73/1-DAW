@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE libros SYSTEM "Libros_dtd.dtd">
+<libros>
+  <libro>
+    <titulo>Las 48 leyes del poder</titulo>
+    <isbn>9788467039054</isbn>
+    <autores>
+      <autor>Robert Greene</autor>
+    </autores>
+    <precios>
+      <precio>22,70</precio>
+    </precios>
+  </libro>
+  <libro >
+    <titulo>Psicologia del bebe adoptado</titulo>
+    <isbn>9788433031402</isbn>
+    <autores>
+      <autor>María Lapastora</autor>
+      <autor>Sandra Harding</autor>
+      <autor>Gloria Bernal</autor>
+    </autores>
+    <precios>  
+      <precio>13,30</precio>
+    </precios>
+  </libro>
+  
+  <libro>
+    <titulo>Economia Internacional</titulo>
+    <autores>
+      <autor>Paul Krugman</autor>
+      <autor>Maurice Obstfeld</autor>
+    </autores>
+    <precios>
+      <precio>60,65</precio>
+    </precios>
+  </libro>
+  
+  <libro>
+    <titulo>Padre Rico, padre Pobre</titulo>
+    <isbn>9781612680019</isbn>  
+    <autores>
+      <autor>Robert Kiyosaki</autor>
+    </autores>
+    <precios>
+      <precio>22,99</precio>
+      <precio>19,83</precio>
+    </precios>  
+  </libro>
+  
+  <libro>
+    <titulo>Don Quijote de la Mancha</titulo>
+    <isbn>9788408061052</isbn>
+    <autores>
+      <autor>Miguel De Cervantes Saavedra</autor>
+    </autores>
+  </libro>
+   
+  
+</libros>
+
+
+
+
+
+
+
+
+

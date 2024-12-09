@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>2js</title>
+</head>
+<body>
+    <form>
+        <input id="precio" type="number" placeholder="Precio">
+        <input id="cantidad" type="number" placeholder="Cantidad">
+        <input type="button" id="calculo" value="Calcular">
+        <input id="resultado" type="number" readonly placeholder="Total">
+    </form>
+
+    <script>
+        const precioInput = document.getElementById("precio");
+        const cantidadInput = document.getElementById("cantidad");
+        const resultadoInput = document.getElementById("resultado");
+        const botonCalculo = document.getElementById("calculo");
+
+        botonCalculo.addEventListener("click", function() {
+            const precio = parseFloat(precioInput.value);
+            const cantidad = parseFloat(cantidadInput.value);
+
+            if (isNaN(precio) || isNaN(cantidad)) {
+                alert("Ingrese valores numéricos válidos para precio y cantidad");
+                return;
+            }
+
+            const total = precio * cantidad;
+            resultadoInput.value = total.toFixed(2);
+        });
+    </script>
+</body>
+</html>

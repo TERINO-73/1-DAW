@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<juzgados xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="LM_B8_ej1.xsd">
+  <sala numero="1">
+    <caso numero="A1">
+      <juez>
+        <nombre>Juan</nombre>
+        <apellidos>Gómez García</apellidos>
+        <dni>28441844X</dni>
+        <numColg>SE-2222-D</numColg>
+      </juez>
+      <acusadora>
+        <persona>
+          <nombre>Luis</nombre>
+          <apellidos>Perez</apellidos>
+          <dni>52741963D</dni>
+          <fechaNac>1980-12-30</fechaNac>
+          <sexo>Masculino</sexo>
+        </persona>
+        <persona>
+          <nombre>Luis</nombre>
+          <apellidos>Gomez</apellidos>
+          <dni>52855963X</dni>
+          <fechaNac>1912-12-30</fechaNac>
+          <sexo>Masculino</sexo>
+        </persona>
+        <fiscal>
+          <nombre>Antonio</nombre>
+          <apellidos>Garcia Serna</apellidos>
+          <dni>27451852X</dni>
+          <numColg>SE-2005-D</numColg>
+        </fiscal>
+        <abogado>
+          <nombre>Juan</nombre>
+          <apellidos>Perez Serrano</apellidos>
+          <dni>28000852X</dni>
+          <numColg>MA-7645-D</numColg>
+        </abogado>
+      </acusadora>
+      <acusada>
+        <persona>
+          <nombre>Luis</nombre>
+          <apellidos>Jimenz Vázquez</apellidos>
+          <dni>52853963X</dni>
+          <fechaNac>1970-02-28</fechaNac>
+          <antecedentes delito="Robo" meses="3"></antecedentes>
+          <antecedentes delito="Asesinato" años="12" meses="2"></antecedentes>
+          <sexo>Masculino</sexo>
+        </persona>
+        <persona>
+          <nombre>José</nombre>
+          <apellidos>Pelaez Rodriguez</apellidos>
+          <dni>44641852X</dni>
+          <fechaNac>1999-12-05</fechaNac>
+          <sexo>Masculino</sexo>
+        </persona>
+        <abogado>
+          <nombre>Juan Luis</nombre>
+          <apellidos>Guitierrez Pérez</apellidos>
+          <dni>95541852X</dni>
+          <numColg>MU-2345-X</numColg>
+        </abogado>
+      </acusada>
+    </caso>
+  </sala>
+</juzgados>

@@ -1,0 +1,19 @@
+INICIO
+<17.2>
+	valor <- 50
+	esta_valor <- "NO"
+	cont_elem <- 0
+	num_elem <- 25
+	REPETIR
+		LEER "Introducir nº ", numero
+	SI (numero= valor) ENTONCES
+		esta_valor <- "SI"
+	FINSI
+	cont_elem <- cont_elem+ 1
+	HASTA (cont_elem= num_elem)
+	SI (esta_valor= "SI") ENTONCES
+		ESCRIBIR "Está el nº ", valor
+	SINO ENTONCES
+		ESCRIBIR "No está el nº ", valor
+	FINSI
+FIN<17.2>

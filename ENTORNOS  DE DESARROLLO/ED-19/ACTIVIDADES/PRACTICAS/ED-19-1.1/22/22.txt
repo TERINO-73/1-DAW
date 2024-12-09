@@ -1,0 +1,22 @@
+INICIO
+<22.1>
+	valor <- 0
+	esta_valor <- 0
+	cont_elem <- 0
+	num_elem <- 0
+		LEER "Introducir valor a buscar", valor
+		LEER "Introducir nº elementos de la serie", num_elem
+		LEER "Introducir nº ", numero
+		MIENTRAS ((cont_elem <> num_elem) Y (numero <> 0))
+			SI (numero= valor) ENTONCES
+				esta_valor <- esta_valor+ 1
+			FINSI
+				cont_elem <- cont_elem+ 1
+			LEER "Introducir nº ", numero
+			REPETIR
+			SI (esta_valor= "SI") ENTONCES
+				ESCRIBIR "El nº ", valor, " está ",esta_valor, " veces"
+			SINO ENTONCES
+				ESCRIBIR "No está el nº ", valor
+			FINSI
+FIN<22.1>

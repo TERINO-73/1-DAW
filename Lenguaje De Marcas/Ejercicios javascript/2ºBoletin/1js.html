@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>1js</title>
+
+</head>
+<body>
+    <div id="bloque1" class="bloque">Este es el primer bloque</div>
+    <div id="bloque2" class="bloque">Este es el segundo bloque</div>
+
+    <script>
+        function cambiaColor() {
+            const bloque2 = document.getElementById("bloque2");
+            if (bloque2) {
+                bloque2.style.backgroundColor = "red";
+            } else {
+                console.error("No se encontró el elemento con ID 'bloque2'");
+            }
+        }
+
+        document.getElementById("bloque1").addEventListener("mouseover", cambiaColor);
+    </script>
+</body>
+</html>
+

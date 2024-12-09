@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6js</title>
+</head>
+<body>
+    <script>
+       
+        function esMultiplo(numero, divisor) {
+        return numero % divisor === 0;
+        }
+
+        
+        let numeroLimite = parseInt(prompt("Introduce un número: "));
+
+        
+        for (let i = 1; i <= numeroLimite; i++) {
+
+        console.log(i);
+
+ 
+        if (esMultiplo(i, 4)) {
+            console.log("Múltiplo de 4");
+        }
+
+
+        if (esMultiplo(i, 9)) {
+            console.log("Múltiplo de 9");
+        }
+
+
+        if (i % 5 === 0) {
+            console.log("----------");
+        }
+        }
+
+
+    </script>
+</body>
+</html>

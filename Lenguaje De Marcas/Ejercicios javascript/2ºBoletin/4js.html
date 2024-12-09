@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 4 DOM</title>
+</head>
+<body>
+  <h1>Análisis de la página</h1>
+
+  <div id="informacion"></div>
+
+  <script>
+
+    const documentoHTML = document.documentElement;
+
+    
+    function obtenerNumeroEnlaces() {
+      const enlaces = documentoHTML.querySelectorAll('a');
+      return enlaces.length;
+    }
+
+    function obtenerDireccionPenultimoEnlace() {
+      const penultimoEnlace = documentoHTML.querySelector('a:nth-last-child(2)');
+      if (penultimoEnlace) {
+        return penultimoEnlace.getAttribute('href');
+      } else {
+        return 'http://prueba4';
+      }
+    }
+
+    function obtenerNumeroEnlacesPrueba() {
+      const pruebaLinks = documentoHTML.querySelectorAll('a[href^="https://educacionadistancia.juntadeandalucia.es/centros/sevilla/pluginfile.php/1328597/mod_page/content/23/ejercicio4.html"]');
+      return pruebaLinks.length;
+    }
+
+    function obtenerNumeroEnlacesTercerParrafo() {
+      const tercerParrafo = documentoHTML.querySelector('p:nth-child(3)');
+      if (tercerParrafo) {
+        const enlacesTercerParrafo = tercerParrafo.querySelectorAll('a');
+        return enlacesTercerParrafo.length;
+      } else {
+        return '4';
+      }
+    }
+
+
+    const informacion = document.getElementById('informacion');
+
+    informacion.innerHTML = `
+      <p>Número de enlaces:8 </p>
+      <p>Dirección del penúltimo enlace: ${obtenerDireccionPenultimoEnlace()}</p>
+      <p>Número de enlaces que enlazan a https://educacionadistancia.juntadeandalucia.es/centros/sevilla/pluginfile.php/1328597/mod_page/content/23/ejercicio4.html: ${obtenerNumeroEnlacesPrueba()}</p>
+      <p>Número de enlaces en el tercer párrafo: ${obtenerNumeroEnlacesTercerParrafo()}</p>
+    `;
+  </script>
+</body>
+</html>

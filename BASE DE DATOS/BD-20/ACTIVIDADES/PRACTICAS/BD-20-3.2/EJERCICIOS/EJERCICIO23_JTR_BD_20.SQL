@@ -1,0 +1,12 @@
+23.1)SELECT NIF,ARTICULO, COD_FABRICANTE, PESO, CATEGORIA, FECHA_PEDIDO, UNIDADES_PEDIDAS
+     FROM PEDIDOS
+     WHERE NIF NOT IN (SELECT NIF
+                       FROM TIENDAS);
+
+no se ha seleccionado ninguna fila
+
+23.2)DELETE PEDIDOS
+     WHERE NIF NOT IN (SELECT NIF
+                       FROM TIENDAS);
+
+0 filas eliminado

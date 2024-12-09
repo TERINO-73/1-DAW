@@ -1,0 +1,91 @@
+1.- Seleccionar los números de departamento ("Núm. Dep.") y el número total de empleados de cada uno ("Núm. Empleados"), en los que haya más de 4 empleados;
+
+ 
+SELECT DEPT_NO "Num. Dep.",(EMP_NO) "Num. Empleados" 
+FROM EMPLE 
+HAVING COUNT(*)>4
+ 
+							
+							
+2.Seleccionar número ("Núm. Emp."), nombre ("Nom. Emp."), y salario ("Sal. Emp."), de los empleados que pertenezcan a los departamentos de Madrid o de Sevilla, en orden ascendente de número, nombre, y salario de los empleados.
+
+SELECT EMP_NO "Núm. Emp.",APELLIDO "Nom. Emp.",SALARIO "Sal. Emp."
+FROM EMPLE 
+WHERE DEPT_NO IN (SELECT DEPT_NO 
+				  FROM DEPART 
+				  WHERE LOC 
+				  IN ('MADRID','SEVILLA'))
+ORDER BY EMP_NO,APELLIDO,SALARIO;
+
+ Núm. Emp. Nom. Emp.   Sal. Emp.
+---------- ---------- ----------
+      7369 SANCHEZ          1040
+      7566 JIMENEZ          2900
+      7782 CEREZO           2885
+      7788 GIL              3000
+      7839 REY              4100
+      7876 ALONSO           1430
+      7902 FERNANDEZ        3000
+      7934 MUÐOZ            1690
+
+3.Seleccionar nombre de departamento ("Nom. Dep."), y número ("Núm. Emp."), nombre ("Nom. Emp."), y salario ("Sal. Emp."), de empleados que pertenezcan a los departamentos de Madrid o de Sevilla, en orden ascendente de número, nombre, y salario de los empleados.
+ 
+SELECT D.DNOMBRE,E.EMP_NO "Núm. Emp.",E.APELLIDO "Nom. Emp.",E.SALARIO "Sal. Emp."
+FROM EMPLE E,DEPART D
+WHERE D.DEPT_NO=E.DEPT_NO AND
+						E.DEPT_NO IN (SELECT D.DEPT_NO 
+									  FROM DEPART 
+									  WHERE LOC 
+									  IN ('MADRID','SEVILLA'))
+ORDER BY EMP_NO,APELLIDO,SALARIO;
+
+Nom. Dep.       Núm. Emp. Nom. Emp.   Sal. Emp.
+-------------- ---------- ---------- ----------
+INVESTIGACION        7369 SANCHEZ          1040
+INVESTIGACION        7566 JIMENEZ          2900
+CONTABILIDAD         7782 CEREZO           2885
+INVESTIGACION        7788 GIL              3000
+CONTABILIDAD         7839 REY              4100
+INVESTIGACION        7876 ALONSO           1430
+INVESTIGACION        7902 FERNANDEZ        3000
+CONTABILIDAD         7934 MUÐOZ            1690
+
+
+
+
+4.Seleccionar nombre de departamento ("Nom. Dep."), y número ("Núm. Emp."), nombre ("Nom. Emp."), y salario ("Sal. Emp."), de empleados que pertenezcan a los departamentos de Madrid o de Sevilla, en los que haya más de 4 empleados por departamento, en orden ascendente de número, nombre, y salario de los empleados.
+
+SELECT D.DNOMBRE,E.EMP_NO "Núm. Emp.",E.APELLIDO "Nom. Emp.",E.SALARIO "Sal. Emp."
+FROM EMPLE E,DEPART D
+WHERE D.DEPT_NO=E.DEPT_NO AND
+	  E.DEPT_NO=D.DEPT_NO AND
+						E.DEPT_NO IN (SELECT D.DEPT_NO 
+										FROM DEPART 
+										WHERE LOC IN ('MADRID','SEVILLA'))
+ORDER BY EMP_NO,APELLIDO,SALARIO;
+
+Nom. Dep.       Núm. Emp. Nom. Emp.   Sal. Emp.
+-------------- ---------- ---------- ----------
+INVESTIGACION        7369 SANCHEZ          1040
+INVESTIGACION        7566 JIMENEZ          2900
+INVESTIGACION        7788 GIL              3000
+INVESTIGACION        7876 ALONSO           1430
+INVESTIGACION        7902 FERNANDEZ        3000
+
+5.Seleccionar nombre de departamento ("Nom. Dep."), y número ("Núm. Emp."), nombre ("Nom. Emp."), y salario ("Sal. Emp."), de empleados que pertenezcan a los departamentos de Madrid o de Sevilla, en los que haya el número mínimo de empleados por departamento, en orden ascendente de número, nombre, y salario de los empleados.
+
+
+SELECT D.DNOMBRE,E.EMP_NO "Núm. Emp.",E.APELLIDO "Nom. Emp.",E.SALARIO "Sal. Emp."
+FROM EMPLE E,DEPART D
+WHERE D.DEPT_NO=E.DEPT_NO AND
+	  E.DEPT_NO=D.DEPT_NO AND
+						E.DEPT_NO IN (SELECT D.DEPT_NO 
+										FROM DEPART 
+										WHERE LOC IN ('MADRID','SEVILLA'))
+ORDER BY EMP_NO,APELLIDO,SALARIO;
+
+Nom. Dep.       Núm. Emp. Nom. Emp.  OFICIO      Sal. Emp.
+-------------- ---------- ---------- ---------- ----------
+CONTABILIDAD         7782 CEREZO     DIRECTOR         2885
+CONTABILIDAD         7839 REY        PRESIDENTE       4100
+CONTABILIDAD         7934 MUÐOZ      EMPLEADO         1690

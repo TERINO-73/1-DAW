@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Inscripción</title>
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    .centrado {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div class="centrado">
+    <p><b>Formulario de Inscripción</b></p>
+    </div>
+    <table border="1px">
+        <tr>
+            <td>
+                
+                <form action="enviar.php" method="post">
+                  <label for="nombre">Nombre:</label>
+            </td>
+            <td>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso" required>
+                  <option value="">-- Selecciona un curso --</option>
+                  <option value="1SMR">1º SMR</option>
+                  <option value="2SMR">2º SMR</option>
+                  <option value="1DAW">1º DAW</option>
+                  <option value="2BACH">2º BACH</option>
+                </select>
+                <label for="asignatura">Asignatura:</label>
+                <select id="asignatura" name="asignatura" required>
+                  <option value="">-- Selecciona una asignatura --</option>
+                  <option value="aplicaciones-ofimaticas">Aplicaciones Ofimáticas</option>
+                  <option value="hlc">HLC</option>
+                  <option value="servicios-en-red">Servicios en Red</option>
+                  <option value="lenguajes-de-marcas">Lenguajes de Marcas</option>
+                  <option value="tic">TIC</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="apellidos">Apellidos:</label>
+            </td>
+            <td>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="direccion">Dirección:</label>
+            </td>
+            <td>
+                <input type="text" id="direccion" name="direccion" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="repite_asignatura">¿Repite Asignatura?</label>
+            </td>
+            <td>
+                <input type="radio" id="repite_asignatura_si" name="repite_asignatura" value="si" checked>
+                <label for="repite_asignatura_si">Sí</label>
+                <input type="radio" id="repite_asignatura_no" name="repite_asignatura" value="no">
+                <label for="repite_asignatura_no">No</label>
+            
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="comentarios">Comentarios:</label>
+            </td>
+            <td>
+                <textarea id="comentarios" name="comentarios" rows="5" cols="30"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Pulse una opción"><b>Pulse una opción</b></label>
+            </td>
+            <td>
+                <div class="centrado">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+                </div>
+            </td>
+        </tr>
+</table>
+
+  <p><u>Instrucciones para rellenar el formulario:</u></p>
+  <ul>
+    <li>En la opción <i>Curso</i> debes elegir entre una de las siguientes opciones:</li>
+    <ul>
+      <li>1º SMR</li>
+      <li>2º SMR</li>
+      <li>1º DAW</li>
+      <li>2º BACH</li>
+    </ul>
+    <li>En la opción <i>Asignatura</i> debes elegir entre una de las siguientes opciones:</li>
+    <ul>
+      <li>APLICACIONES OFIMÁTICAS</li>
+      <li>HLC</li>
+      <li>SERVICIO EN RED</li>
+      <li>LENGUAJES DE MARCAS</li>
+      <li>TIC</li>
+    </ul>
+  </ul>
+</body>
+</html>

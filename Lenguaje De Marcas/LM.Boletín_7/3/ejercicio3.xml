@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<colores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicio3.xsd">
+<color>azul marino</color>
+<color>negro</color>
+<color>amarillo</color>
+</colores>
