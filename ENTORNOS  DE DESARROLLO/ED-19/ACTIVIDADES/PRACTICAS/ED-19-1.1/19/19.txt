@@ -1,0 +1,64 @@
+INICIO <16.3>
+	esta_valor <-"NO"
+	
+	contador <- 0
+	valor <-50
+	
+		 
+			Escribir "introduzca un numero"
+			Leer cont_elem
+		Mientras (cont_elem=contador)
+			Escribir "introduzca un numero"
+			Leer cont_elem
+			Si cont_elem = valor Entonces
+				esta_valor ="SI"
+			FinSi
+			
+		Repetir
+	
+		Si esta_valor -> "SI" Entonces
+			Escribir "Ha escrito el numero "valor
+		SiNo
+			Escribir "No ha escrito en "valor
+		FinSi
+
+FIN <16.1>
+	
+	INICIO<16.3>
+		<Inicialiciacion_variables>
+		<entra_numero>
+		Mientras (cont_elem=contador)
+			<entra_numero>
+			<proceso>
+		Repetir
+		<Mostrar Resultado>
+	FIN<16.3>
+	
+	
+	
+	
+	INICIO<Inicialiciacion_variables>
+		esta_valor <-"NO"
+		cont_elem <- 0
+		contador <- 1
+	FIN<Inicialiciacion_variables>
+	
+	INICIO<entra_numero>
+		Escribir "introduzca un numero"
+		Leer cont_elem
+	FIN<entra_numero>
+	
+	INICIO<proceso>
+		Si cont_elem = 50 Entonces
+				esta_valor ="SI"
+		FinSi
+			
+	FIN<Proceso>
+	
+	INICIO<Mostrar Resultado>
+		Si esta_valor -> "SI" Entonces
+			Escribir "Ha escrito el numero "valor
+		SiNo
+			Escribir "No ha escrito en "valor
+		FinSi
+	FIN<Mostrar Resultado>

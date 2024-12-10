@@ -1,0 +1,10 @@
+INICIO <10ED>
+
+
+	Leer 'Escriba dos numero y yo ledirecual es el mayor' n1, n2
+	Si n1>=n2 Entonces
+		Escribir n1, ' Es el mayor'
+	SiNo
+		Escribir n2, ' Es el mayor'
+	FinSi
+FIN <10ED>

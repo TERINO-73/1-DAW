@@ -1,0 +1,81 @@
+import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+class Empleado {
+private String n;
+private double s;
+private String d;
+
+    public E(String n, double s, String d) {
+this.nombre = n;
+this.salario = s;
+this.departamento = d;
+    }
+public String obtenerN() {
+return n;
+    }
+
+public double obtenerS() {
+return s;
+    }
+
+public String obtenerD() {
+return d;
+    }
+
+    @Override
+    public String toString() {
+return "Empleado{" +
+"nombre='" + n + '\'' +
+", salario=" + s +
+", departamento='" + d + '\'' +
+'}';
+    }
+}
+
+class SGE {
+private ArrayList<E> e;
+
+public SGE() {
+this.e = new ArrayList<>();
+}
+
+public void aE(E e) {
+empleados.add(e);
+System.out.println("Empleado agregado con éxito.");
+}
+public void elE(String n) {
+for (int i = 0; i < empleados.size(); i++) {
+if (empleados.get(i).obtenerNombre().equals(nombre)) {
+empleados.remove(i);
+System.out.println("Empleado eliminado con éxito.");
+return;
+}
+}
+System.out.println("No se encontró el empleado.");
+}
+
+public void mostrarEmpleados() {
+if (empleados.isEmpty()) {
+System.out.println("No hay empleados registrados.");
+return;
+}
+
+System.out.println("Lista de empleados:");
+for (Empleado empleado : empleados) {
+System.out.println(empleado);
+}
+}
+public Empleado buscarEmpleado(String nombre) {
+for (Empleado empleado : empleados) {
+if (empleado.obtenerNombre().equals(nombre)) {
+return empleado;
+}
+}
+return null;
+}
+
+public void modificarSalarioEmpleado(String nombre, double nuevoSalario) {
+Empleado empleado = buscarEmpleado(nombre);
+if (empleado !=
