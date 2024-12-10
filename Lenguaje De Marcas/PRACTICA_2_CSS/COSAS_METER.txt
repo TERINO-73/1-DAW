@@ -1,0 +1,33 @@
+Primero meterle los float y diferentes cuadrados para que el formato sea diferente a cualquier documento.
+Debes usar todas las características de fondos, bordes, márgenes, rellenos, anchura y altura
+ distintos tipos de selectores, etc. Las páginas deberán tener layout diferentes 
+ (dos, tres columnas, pie, cabecera, ...). Se deberán utilizar también estilos CSS3.
+Utilizar pseudoclases y pseudoelementos.
+Poner algunas letras capitales.
+Poner listas,tablas,cajas y en una de las paginas tienes que poner un cuestionario.
+Utilizar el border radius y el border image.
+Poner algunas sombras.
+Mira lo de las transiciones que parece que puede estar guapo.
+
+
+
+
+EMPIEZA POR AQUI CABEZÓN LO DE ARRIBA ES DE REVISIÓN.
+
+Fijate de la cabecera de esta pagina que ma molado https://www.pokemon.com/us
+De aqui mira como tienes gestionado los bloques https://frentebatalla.com
+Mira el registro de esta pagina, o sino en el primer enlace tambien está otro posible y bastante mas sencillo
+Puedes poner noticioas estaticas de pokemon como en la siguiente pagina https://www.pokebeach.com
+Pon una pokeball o algo relacionado donde se ve la pestaña
+
+
+
+
+
+
+
+
+
+
+
+

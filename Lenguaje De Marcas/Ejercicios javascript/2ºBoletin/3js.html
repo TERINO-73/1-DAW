@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cambio de color al pasar el ratón</title>
+    <style>
+        #bloque {
+            display: block;
+            width: 25%;
+            height: 150px;
+            background-color: white; /* Color inicial blanco */
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            const bloque = document.getElementById("bloque");
+
+            bloque.addEventListener("mouseover", function() {
+                bloque.style.backgroundColor = "green";
+            });
+
+            bloque.addEventListener("mouseout", function() {
+                bloque.style.backgroundColor = "white";
+            });
+        };
+    </script>
+</head>
+<body>
+    <div id="bloque">
+        Este bloque cambia de color al entrar el ratón en el mismo
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+          <xs:element name="catalog" type="tcatalogo"/>
+            <xs:complexType name="tcatalogo">
+              <xs:sequence>
+                <xs:element name="propietario" type="tpropietario" minOccurs="0"/>
+                <xs:element name="cd" type="tcd" minOccurs="1" maxOccurs="unbounded"/>
+              </xs:sequence>
+
+            </xs:complexType>
+              <xs:complexType name="tpropietario">
+                <xs:sequence>
+                  <xs:element name="nombre" type="xs:string"/>
+                  <xs:element name="Dirección" type="tdireccion"/>
+                  <xs:element name="telefono" type="ttelefono"/>
+                </xs:sequence>
+            </xs:complexType>
+
+
+            <xs:complexType name="tdireccion">
+              <xs:sequence>
+                <xs:element name="Casa" type="tcasa"/>
+                <xs:element name="Trabajo" type="ttrabajo" minOccurs="0"/>
+              </xs:sequence>
+            </xs:complexType>
+
+            <xs:complexType name="tcasa">
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="ciudad" type="xs:string"/>
+                      <xs:attribute name="codigo" type="xs:integer"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+                
+            <xs:complexType name="ttrabajo">
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="Ciudad" type="xs:string"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+                
+
+            <xs:complexType name="ttelefono">
+            <xs:sequence>
+                <xs:element name="fijo" type="tfijo" maxOccurs="3"/>
+                <xs:element name="movil" type="tmovil" maxOccurs="2"/>
+            </xs:sequence>
+            </xs:complexType>
+
+            <xs:simpleType name="tfijo">
+              <xs:restriction base="xs:integer">
+                <xs:pattern value="[9]{1}\d{8}"/>
+              </xs:restriction>
+            </xs:simpleType>
+
+            <xs:simpleType name="tmovil">
+              <xs:restriction base="xs:integer">
+                <xs:pattern value="[6]{1}\d{8}"/>
+                <xs:pattern value="[7]{1}\d{8}"/>
+              </xs:restriction>
+            </xs:simpleType>
+
+
+            <xs:complexType name="tcd">
+              <xs:sequence>
+                  <xs:element name="title" type="xs:string"/>
+                  <xs:element name="artist" type="xs:string"/>
+                  <xs:element name="country" type="tcountry" default="UK"/>
+                  <xs:element name="company" type="xs:string" minOccurs="0"/>
+                  <xs:element name="price" type="tmoneda" minOccurs="0"/>
+                  <xs:element name="year" type="tyear"/>
+              </xs:sequence>
+            </xs:complexType>
+
+            <xs:simpleType name="tcountry">
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="UK"/>
+                <xs:enumeration value="USA"/>
+                <xs:enumeration value="EU"/>
+                <xs:enumeration value="Norway"/>
+              </xs:restriction>
+            </xs:simpleType>
+
+            <xs:complexType name="tmoneda">
+                  <xs:simpleContent>
+                    <xs:extension base="xs:decimal">
+                      <xs:attribute name="moneda" type="ttmoneda" default="libra"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+                
+            <xs:simpleType name="ttmoneda">
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="libra"/>
+                <xs:enumeration value="euro"/>
+                <xs:enumeration value="dolar"/>
+              </xs:restriction>
+            </xs:simpleType>
+
+            <xs:simpleType name="tyear">
+              <xs:union memberTypes="xs:gYear xs:date"/>
+            </xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,11 @@
+<!ELEMENT elementos (elemento*)>
+<!ELEMENT elemento (nombre,simbolo,numero_atomico,peso_atomico,punto_ebullicion,densidad)>
+<!ATTLIST elemento estado CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT simbolo (#PCDATA)>
+<!ELEMENT numero_atomico (#PCDATA)>
+<!ELEMENT peso_atomico (#PCDATA)>
+<!ELEMENT punto_ebullicion (#PCDATA)>
+<!ATTLIST punto_ebullicion unidades NMTOKEN #REQUIRED>
+<!ELEMENT densidad (#PCDATA)>
+<!ATTLIST densidad unidades NMTOKEN #REQUIRED>

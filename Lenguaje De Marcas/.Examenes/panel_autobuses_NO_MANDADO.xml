@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE panel_autobuses SYSTEM "panel_autobuses.dtd">
+
+  <panel_autobuses>
+  
+    <viaje>
+      <nombre_estacion>Panel Salidas Estación Autobuses Sevilla</nombre_estacion>
+        <tipo_panel codigo="00001" estado="R">
+        <diario/>
+        <origen>Seviila</origen>
+        <destino>Córdoba</destino>
+        <hora_salida>9:00</hora_salida>
+        <hora_llegada>10:30</hora_llegada>
+        </tipo_panel>
+        <fecha_panel>12/10/2023</fecha_panel>
+    </viaje>
+    
+    <viaje>
+      <nombre_estacion>Panel Salidas Estación Autobuses Sevilla</nombre_estacion>
+        <tipo_panel codigo="00002" estado="C">
+        <diario/>
+        <origen>Sevilla</origen>
+        <destino>Cádiz</destino>
+        <hora_salida>10:00</hora_salida>
+        <hora_llegada>11:15</hora_llegada>
+        
+        </tipo_panel>
+        <fecha_panel>12/10/2023</fecha_panel>
+    </viaje>
+    
+    <viaje>
+      <nombre_estacion>Panel Salidas Estación Autobuses Sevilla</nombre_estacion>
+        <tipo_panel codigo="00003" estado="E">
+        <origen>Sevilla</origen>
+        <destino>Madrid</destino>
+        <hora_salida>14:00</hora_salida>
+        <hora_llegada>19:00</hora_llegada>
+        </tipo_panel>
+        <fecha_panel>12/10/2023</fecha_panel>
+    </viaje>
+    
+  </panel_autobuses>

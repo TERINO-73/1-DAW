@@ -1,0 +1,18 @@
+<!ELEMENT panel_autobuses (viaje+)>
+<!ELEMENT viaje (nombre_estacion,tipo_panel,fecha_panel)>
+<!ELEMENT nombre_estacion (#PCDATA)>
+<!ELEMENT tipo_panel (diario?,origen,destino,hora_salida,hora_llegada)>
+<!ATTLIST tipo_panel codigo NMTOKEN #REQUIRED>
+<!ATTLIST tipo_panel estado (E| C | R) #REQUIRED>
+<!ELEMENT diario EMPTY>
+<!ELEMENT origen (#PCDATA)>
+<!ELEMENT destino (#PCDATA)>
+<!ELEMENT hora_salida (#PCDATA)>
+<!ELEMENT hora_llegada (#PCDATA)>
+<!ELEMENT fecha_panel (#PCDATA)>
+
+
+
+
+
+

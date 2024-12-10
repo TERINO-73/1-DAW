@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="alumnos" type="talumnos"/>
+  
+   <xs:complexType name="talumnos">
+      <xs:sequence>
+        <xs:element name="alumno" type="talumno" maxOccurs="unbounded"/>
+      </xs:sequence> 
+    </xs:complexType>
+    
+        <xs:complexType name="talumno" >
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="direccion" type="tdireccion" maxOccurs="2"/>
+        <xs:element name="telefono" type="xs:integer" minOccurs="0" maxOccurs="5"/>
+      </xs:sequence> 
+      <xs:attribute name="dni" type="ttdni"/>
+    </xs:complexType>
+    
+        <xs:simpleType name="ttdni">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{8}[A-Z]{1}"/>
+      <xs:pattern value="[A-Z]{1}\d{8}"/>
+    </xs:restriction>
+  </xs:simpleType>
+    
+    <xs:complexType name="tdireccion" >
+      <xs:sequence>
+        <xs:element name="calle" type="xs:string"/>
+        <xs:element name="numero" type="tnumero"/>
+        <xs:element name="ciudad" type="xs:string"/>
+        <xs:element name="provincia" type="tprovincia"/>
+      </xs:sequence> 
+    </xs:complexType>
+    
+    <xs:simpleType name="tprovincia">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Badajoz"/>
+      <xs:enumeration value="Cáceres"/>
+    </xs:restriction>  
+  </xs:simpleType>
+  
+      <xs:simpleType name="tnumero">
+      <xs:restriction base="xs:integer">
+        <xs:minExclusive value="0"/>
+        <xs:maxInclusive value="500"/>
+      </xs:restriction>
+    </xs:simpleType>
+    
+</xs:schema>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE elementos SYSTEM "LM_B5_ej3_xml.xml">
+<elementos>
+  <elemento estado="Gaseoso">
+    <nombre>Hidrogeno</nombre>
+    <simbolo>H</simbolo>
+    <numero_atomico>1</numero_atomico>
+    <peso_atomico>1.00784(7)2​3​4</peso_atomico>
+    <punto_ebullicion unidades="ºc">-252.69</punto_ebullicion>
+    <densidad unidades="g-cm3">0.084</densidad>
+  </elemento>
+  <elemento estado="Gaseoso">
+    <nombre>Helio</nombre>
+    <simbolo>He</simbolo>
+    <numero_atomico>2</numero_atomico>
+    <peso_atomico>4.002602(2)2​4​</peso_atomico>
+    <punto_ebullicion unidades="ºc">-268.9</punto_ebullicion>
+    <densidad unidades="g-cm3">0.17</densidad>
+  </elemento>
+  <elemento estado="Gaseoso">
+    <nombre>Litio</nombre>
+    <simbolo>Li</simbolo>
+    <numero_atomico>3</numero_atomico>
+    <peso_atomico>6.941(2)2​3​4​5​</peso_atomico>
+    <punto_ebullicion unidades="ºc">1317</punto_ebullicion>
+    <densidad unidades="g-cm3">0.53</densidad>
+  </elemento>
+  <elemento estado="Gaseoso">
+    <nombre>Berilio</nombre>
+    <simbolo>Be</simbolo>
+    <numero_atomico>4</numero_atomico>
+    <peso_atomico>9.012182(3)</peso_atomico>
+    <punto_ebullicion unidades="ºc">2970</punto_ebullicion>
+    <densidad unidades="g-cm3">1.85</densidad>
+  </elemento>
+  <elemento estado="Gaseoso">
+    <nombre>Boro</nombre>
+    <simbolo>B</simbolo>
+    <numero_atomico>5</numero_atomico>
+    <peso_atomico>10.811(7)2​3​4</peso_atomico>
+    <punto_ebullicion unidades="ºc">2550</punto_ebullicion>
+    <densidad unidades="g-cm3">2.46</densidad>
+  </elemento>
+  <elemento estado="Gaseoso">
+    <nombre>Carbono</nombre>
+    <simbolo>C</simbolo>
+    <numero_atomico>6</numero_atomico>
+    <peso_atomico>12.0107(8)2​4</peso_atomico>
+    <punto_ebullicion unidades="ºc">4827</punto_ebullicion>
+    <densidad unidades="g-cm3">3.51</densidad>
+  </elemento>
+  <elemento estado="Gaseoso">
+    <nombre>Nitrogeno</nombre>
+    <simbolo>N</simbolo>
+    <numero_atomico>7</numero_atomico>
+    <peso_atomico>14.0067(2)2​4</peso_atomico>
+    <punto_ebullicion unidades="ºc">-195.8</punto_ebullicion>
+    <densidad unidades="g-cm3">1.17</densidad>
+  </elemento>
+  <elemento estado="Gaseoso">
+    <nombre>Oxigeno</nombre>
+    <simbolo>O</simbolo>
+    <numero_atomico>8</numero_atomico>
+    <peso_atomico>15.9994(3)2​4​	</peso_atomico>
+    <punto_ebullicion unidades="ºc">-182.9</punto_ebullicion>
+    <densidad unidades="g-cm3">1.33</densidad>
+  </elemento>
+  <elemento estado="Gaseoso">
+    <nombre>Fluor</nombre>
+    <simbolo>F</simbolo>
+    <numero_atomico>9</numero_atomico>
+    <peso_atomico>18.9984032(5)</peso_atomico>
+    <punto_ebullicion unidades="ºc">-188.1</punto_ebullicion>
+    <densidad unidades="g-cm3">1.58</densidad>
+  </elemento>
+  <elemento estado="Gaseoso">
+    <nombre>Neon</nombre>
+    <simbolo>Ne</simbolo>
+    <numero_atomico>10</numero_atomico>
+    <peso_atomico>20.1797(6)2​3</peso_atomico>
+    <punto_ebullicion unidades="ºc">-246.1</punto_ebullicion>
+    <densidad unidades="g-cm3">0.84</densidad>
+  </elemento>
+  
+</elementos>

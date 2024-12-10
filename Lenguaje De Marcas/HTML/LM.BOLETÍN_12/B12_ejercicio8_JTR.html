@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información del producto</title>
+</head>
+<body>
+    <h3><b>Información sobre el producto</b></h3>
+        <table border="1px">
+            <caption>Datos básicos</caption>
+            <td>
+                Nombre: <br>
+                <input type="text" id="nombre" name="nombre">
+<br> <br>
+                Descripción <br>
+                <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea><br>
+                Foto:
+                <input type="file" id="foto" name="foto"><br>
+                <input type="checkbox" id="contador_visitas" name="contador_visitas">
+                Añadir contador de visitas
+                
+            </td>
+            
+
+            
+        </table>
+        <table border="1px">
+            <caption>Datos económicos</caption>
+            
+                
+                <td> 
+                    <p>Precio:
+                        <input type="number" id="precio" name="precio" step="0.01">€
+                        Impuestos:
+                    <select id="impuestos" name="impuestos">
+                    <option value="16">IVA 16%</option>
+                    <option value="0">Sin IVA</option>
+                    <option value="3">IVA 3%</option>
+                    <option value="21">IVA 21%</option>
+                    </p>
+
+                </select>
+
+           <br>
+                
+                <br>
+                    Promoción:
+                    <br>
+                        <input type="radio" id="ninguno" name="ninguno" value="ninguno" checked>
+                        <label for="ninguno">Ninguno</label>
+                        <br>
+                        <input type="radio" id="ninguno" name="transporte_gratuito" value="transporte_gratuito">
+                        <label for="transporte_gratuito">Transporte gratuito</label>
+                        <br>
+                        <input type="radio" id="ninguno" name="descuento_5" value="descuento_5">
+                        <label for="repite_asignatura_no">Descuento 5%</label>
+
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+</body>
+</html>

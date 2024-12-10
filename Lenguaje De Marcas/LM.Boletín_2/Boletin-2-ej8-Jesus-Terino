@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<alumnos>
+  <alumno>
+    <nombre> Luis Alcalde García</nombre>
+    <direccion> Las Manos, 24 </direccion>
+    <poblacion>Madrid</poblacion>
+    <telefono>942756645</telefono>
+    <codigo>12344345</codigo>
+    <asignaturas>
+      <a1>4</a1>
+      <a2>10</a2>
+      <a3>3</a3>
+      <a4>8</a4>
+      <a5>6</a5>
+    </asignaturas>
+  </alumno>
+  
+  <alumno>
+    <nombre>González Pérez, Olga </nombre>
+    <direccion>Miraflor 28 - 3ª</direccion>
+    <poblacion>Torres</poblacion>
+    <telefono>942564355</telefono>
+    <codigo>43483437</codigo>
+    <asignaturas>
+      <a1>5</a1>
+      <a2>7</a2>
+      <a4>4</a4>
+    </asignaturas>
+  </alumno>
+  
+  <alumno>
+    <nombre>Fernández Diez, María</nombre>
+    <direccion>Luisa Fernanda 53</direccion>
+    <Poblacion>Miera</Poblacion>
+    <telefono>942346945</telefono>
+    <codigo>88234942</codigo>
+    <asignaturas>
+      <a1>8</a1>
+      <a2>6</a2>
+      <a3>6</a3>
+    </asignaturas>
+  </alumno>
+
+</alumnos>
+
+

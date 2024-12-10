@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4js</title>
+</head>
+<body>
+    <script>
+        function esPalindromo(texto) {
+
+        texto = texto.replace(/\s/g, "").toLowerCase();
+
+
+        var textoInvertido = texto.split("").reverse().join("");
+
+
+        return texto === textoInvertido;
+        }
+
+
+        var textoUsuario = prompt("Ingrese un texto para verificar si es un palíndromo:");
+
+
+        var esPalindromo = esPalindromo(textoUsuario);
+
+
+        if (esPalindromo) {
+            alert(textoUsuario + " es un palíndromo.");
+        } else {
+            alert(textoUsuario + " no es un palíndromo.");
+        }
+
+
+    </script>
+</body>
+</html>
