@@ -1,0 +1,7 @@
+Habitacion;Velazquez;3;s
+Apartamento;Cervantes;3;s;2;s
+Apartamento;Quevedo;2;s;1;s
+Habitacion;Murillo;2;s
+Habitacion;da Vinci;2;n
+Apartamento;Gongora;4;n;2;n
+Apartamento;Dali;2;n;1;s
