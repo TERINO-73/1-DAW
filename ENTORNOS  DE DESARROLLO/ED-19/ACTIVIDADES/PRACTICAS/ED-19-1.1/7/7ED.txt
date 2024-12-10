@@ -1,9 +1,0 @@
-Inicio<ED7>
-
-	Leer "Introduzca un numero",n
-	Si n<0 Entonces
-		Escribir "Su numero es negativo"
-	SiNo
-		Escribir "Su numero es negativo"
-	Fin Si
-Fin<ED7>

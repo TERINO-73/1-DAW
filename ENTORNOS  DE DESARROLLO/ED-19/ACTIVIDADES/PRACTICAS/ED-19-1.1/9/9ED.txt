@@ -1,7 +1,0 @@
-INICIO <8ED>
-	PI<-3.1416
-	
-	Leer 'Ponga el radio de su circulo'  r
-	resultado <- PI*r*r
-	Escribir 'El area de su circulo es: ', resultado
-FIN <8ED> 

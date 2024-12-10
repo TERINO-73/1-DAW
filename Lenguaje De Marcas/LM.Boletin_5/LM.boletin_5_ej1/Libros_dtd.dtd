@@ -1,9 +1,0 @@
-<!ELEMENT libros (libro*)>
-<!ELEMENT libro (titulo*,isbn?,autores*,precios*)>
-<!ELEMENT  titulo (#PCDATA)>
-<!ELEMENT  isbn (#PCDATA)>
-<!ELEMENT autores (autor*)>
-<!ELEMENT autor (#PCDATA)>
-<!ATTLIST libro isbn ID #IMPLIED>
-<!ELEMENT precios (precio*)>
-<!ELEMENT  precio (#PCDATA)>

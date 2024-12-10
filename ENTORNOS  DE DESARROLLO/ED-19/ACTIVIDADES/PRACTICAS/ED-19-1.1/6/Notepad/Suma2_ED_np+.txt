@@ -1,7 +1,0 @@
-Inicio <Programa>
-
-	Leer "Introducir num",x
-	Leer "Introducir num",y
-	Escribir "La suma es:",x + y
-
-Fin <Programa>
